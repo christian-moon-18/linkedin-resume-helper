@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LinkedIn Job Description Analyzer</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Load PDF.js files with defer attribute -->
+  <script defer src="libs/pdf.min.js"></script>
+  <script defer src="libs/pdf.worker.min.js"></script>
+  <script defer src="libs/pdf-config.js"></script>
+  <script defer src="popup.js"></script>
+</head>
+<body>
+  <h2>API Key Setup</h2>
+  
+  <div class="api-key-section">
+    <input type="password" id="api-key" placeholder="Enter OpenAI API Key" />
+    <button id="save-api-key">Save API Key</button>
+    <div id="api-key-content" class="status-message">No API Key stored yet.</div>
+  </div>
+
+  <div class="model-section">
+    <label for="model-select">Select Model:</label>
+    <select id="model-select">
+      <option value="gpt-3.5-turbo">GPT-3.5-Turbo</option>
+      <option value="gpt-4o">GPT-4o</option>
+      <option value="gpt-4o-mini">GPT-4o mini</option>
+    </select>
+  </div>
+  
+  <div class="resume-section">
+    <h3>Upload Resume</h3>
+    <input type="file" id="resume-file" accept=".pdf,.txt" />
+    <button id="upload-button">Upload Resume</button>
+    <div id="resume-status" class="status-message"></div>
+  </div>
+
+  <div class="analysis-section">
+    <h3>Job Analysis</h3>
+    <button id="analyze-job" disabled>Analyze Job Description</button>
+    <div id="analysis-status" class="status-message"></div>
+  </div>
+
+  <div class="clear-section">
+    <h3>Clear Configurations</h3>
+    <button id="clear-api-key">Clear API Key</button>
+    <button id="clear-resume">Clear Resume</button>
+  </div>
+</body>
+</html>

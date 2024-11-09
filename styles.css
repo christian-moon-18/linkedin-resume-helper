@@ -1,0 +1,48 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    width: 250px;
+    box-sizing: border-box;
+    background-color: #33203a;
+  }
+  
+  input[type="file"],
+  input[type="text"],
+  select,
+  button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  input[type="file"] {
+    padding: 6px;
+  }
+  
+  button {
+    background-color: #0c85b4;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #bb18bb;
+  }
+  
+  #output {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e9f7ef;
+    border-left: 4px solid #387ab8;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  

@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Job Description Analyzer",
+    "version": "1.0",
+    "description": "Analyze job descriptions and enhance resumes",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "downloads",
+      "scripting",
+      "tabs"
+    ],
+    "host_permissions": [
+      "https://*.linkedin.com/*"
+    ],
+    "web_accessible_resources": [{
+      "resources": [
+        "libs/pdf.min.js",
+        "libs/pdf.worker.min.js",
+        "libs/pdf-config.js"
+      ],
+      "matches": ["<all_urls>"]
+    }],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [{
+      "matches": ["https://*.linkedin.com/jobs/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }]
+  }
