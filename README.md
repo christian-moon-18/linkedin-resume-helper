@@ -1,4 +1,23 @@
-## Steps:
+## AI-Powered Resume Helper Extension
+
+This Chrome/Edge extension enhances your resume by automatically analyzing job postings from LinkedIn and injecting relevant keywords directly into your resume. By aligning your resume with key phrases used in job descriptions, the tool helps increase your chances of passing Applicant Tracking Systems (ATS) and getting noticed by hiring managers.
+
+### Key Features
+
+- **Automated Keyword Injection**: Uses AI to identify important keywords from LinkedIn job postings and incorporate them seamlessly into your resume.
+- **Markdown Output**: Returns your updated resume in Markdown format for easy editing, readability, and export.
+- **Easy Export Options**: The Markdown format can be quickly converted into PDF or Word documents for versatile sharing options.
+
+### How It Works
+
+1. **Upload Your Resume**: The tool currently supports PDF resumes.
+2. **Analyze Job Postings**: Scrape job descriptions directly from LinkedIn to analyze required keywords.
+3. **Keyword Injection**: AI-driven analysis determines the most relevant keywords to add to your resume without fabricating experience.
+4. **Export**: Copy the final Markdown output or convert it to PDF/Word formats as needed.
+
+This extension helps you quickly tailor your resume for specific roles, saving time while improving your chances of standing out in a competitive job market.
+
+## Steps to setup:
 
 1. **Create an account on OpenAI:** [https://platform.openai.com/signup](https://platform.openai.com/signup)
 2. **Add payment details** and buy approximately $5 worth of credits.
