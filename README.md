@@ -11,3 +11,20 @@
 7. **Enable developer mode**.
 8. **Click "Load unpacked"** and select the unzipped folder.
 9. **Use the tool** (currently only supports PDF resumes and LinkedIn job postings).
+10. **OPTIONAL:** Paste the text results into a Markdown editor and export to PDF. Or, use a tool like pandoc to translate the markdown file into a Word document, for even more customization
+
+---
+
+### Disclaimer
+
+- **OpenAI Billing:** Using the OpenAI API incurs costs based on usage. Be mindful of the pricing structure, and set budget alerts in your OpenAI account if needed to avoid unexpected charges.
+  
+- **Security of API Key:** Treat your API key like a password. Never share it or include it in public repositories or unencrypted files. Misuse of your key can lead to unauthorized charges.
+
+- **Developer Mode Extensions:** Enabling Developer Mode to load unpacked extensions may increase security risks, as it allows installation of non-verified extensions. Only load extensions from trusted sources and remember to disable Developer Mode if not in use.
+
+- **Privacy Considerations:** This tool processes resume and job posting data. No information is stored by the extension itself, but exercise caution when handling sensitive information, especially in shared or public environments.
+
+- **Supported File Types and Websites:** The tool currently only supports PDF resumes and LinkedIn job postings. Results may vary if used with other file types or job posting platforms. 
+
+Use this tool responsibly and within the guidelines of the OpenAI API and any data policies relevant to your personal information and online accounts.
