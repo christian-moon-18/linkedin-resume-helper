@@ -122,7 +122,7 @@ async function handleJobAnalysis(request) {
             content: `You are a professional resume editor. Analyze the provided resume and job description, 
                      then enhance the resume to better match the job requirements while maintaining honesty 
                      and authenticity. Highlight relevant experience and skills, improve phrasing, and 
-                     suggest additions where appropriate.`
+                     suggest additions where appropriate. Output it in markdown.`
           },
           {
             role: "user",

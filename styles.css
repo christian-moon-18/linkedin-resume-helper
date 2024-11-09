@@ -6,7 +6,7 @@ body {
     padding: 20px;
     width: 250px;
     box-sizing: border-box;
-    background-color: #33203a;
+    background-color: #2632dd;
   }
   
   input[type="file"],
@@ -27,7 +27,7 @@ body {
   }
   
   button {
-    background-color: #0c85b4;
+    background-color: #c2e447;
     color: white;
     cursor: pointer;
     font-weight: bold;
