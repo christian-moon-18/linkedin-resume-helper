@@ -121,8 +121,8 @@ async function handleJobAnalysis(request) {
             role: "system",
             content: `You are a professional resume editor. Analyze the provided resume and job description, 
                      then enhance the resume to better match the job requirements while maintaining honesty 
-                     and authenticity. Highlight relevant experience and skills, improve phrasing, and 
-                     suggest additions where appropriate. Output it in markdown.`
+                     and authenticity. Also maintain the current structure of the resume. Highlight relevant experience and skills, improve phrasing, and 
+                     make additions where appropriate. Output it in markdown.`
           },
           {
             role: "user",
@@ -150,7 +150,7 @@ async function handleJobAnalysis(request) {
     // Download the file using the data URL
     await chrome.downloads.download({
       url: dataUrl,
-      filename: `enhanced_resume_${new Date().toISOString().split('T')[0]}.txt`,
+      filename: `enhanced_resume_${new Date().toISOString().split('T')[0]}.md`,
       saveAs: true
     });
 
